@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com o DOM</title>
+
+    <style>
+        body {
+            background: lightblue;
+            min-height: 98vh;
+            font: normal 3em monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Iniciando estudos com DOM</h1>
+    <p class="text">Aqui vai os resultados</p>
+    <p class="text2">Olha o <strong>DOM</strong></p>
+    <div name="dive">Clique aqui</div>
+
+    <script>
+        document.body.style.color = 'blue'
+
+        // seleciona elementos na ÁRVORE DOM por MARCA / TAGNAME e informa o INDÍCE entre []
+        var p = document.getElementsByTagName('p')[0]
+        p.style.color = 'violet', p.style.background = 'white'
+        document.write(`Está escrito assim: ${p.innerHTML}`)
+
+        // seleciona elementos na ÁRVORE DOM por ID / IDENTIFICADOR id="valor"
+        var titulo = document.getElementById('titulo').style.background = 'lime'
+
+        // seleciona elementos na ÁRVORE DOM por NAME / nome  nome="valor"
+        document.getElementsByName('dive')[0].style.color = 'lime'
+
+        // seleciona elementos na ÁRVORE DOM por CLASS / CLASSE  class="valor"
+        document.getElementsByClassName('text')[0].style.color = 'orange'
+
+        // selectiona elementos na ÁRVODE DOM por QUERYSELECTOR / SELETOR  div#msg
+        document.querySelector('p.text2').style.color = 'red'
+    </script>
+</body>
+</html>

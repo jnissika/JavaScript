@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Dados</title>
+    <style>
+        * {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+body { /* comentário em css */
+    background: gray;
+    color: #fff;
+    font: monospace, sans-serif;
+}
+
+h1 {
+    color: orange; 
+}
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1> <!-- comentário em html -->
+    <p>Me livrei da maldição</p>
+
+    <script>
+        var n1 = Number(window.prompt('Informe um número: ')) // String to Number (Int ou Float)
+        var n2 = Number(window.prompt('Informe outro número: ')) // String to Number (Int ou Float)
+        var resp = n1 + n2
+        window.alert(`A soma de ${n1} + ${n2} é igual à: ${resp}`)
+
+        /* 
+            formatando string: alert(`A soma de ${n1} + ${n2} é: ${soma}.`) // <-- TEMPLATE STRING
+            placeholder: ${}
+            crase: ``
+        */
+    </script>
+</body>
+</html>

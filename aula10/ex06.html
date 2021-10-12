@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+        var corpo = document.body
+        corpo.style.height = '100vh'
+        corpo.style.display = 'grid'
+        corpo.style.placeItems = 'center'
+
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        function clicar(params){
+            area.innerText = 'CLICOU!'
+            area.style.background = 'red'
+        }
+
+        area.addEventListener('mouseenter', entrar)
+        function entrar(params) {
+            area.innerText = 'ENTROU!'
+            area.style.background = 'orange'
+        }
+
+        area.addEventListener('mouseout', sair)
+        function sair(params) {
+            area.innerText = 'SAIU!'
+            area.style.background = 'pink'
+        }
+
+        area.addEventListener('dblclick', doubleclick)
+        function doubleclick(params) {
+           area.innerText = 'CLICK DUPLO!'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style>
+        body {
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = String(prompt('Qual é o seu nome inteiro: '))
+        document.write(`Olá, ${nome}. <br>`) //mostra o nome na variável 
+        document.write(`Seu nome tem ${nome.length} letras. <br>`) //mostra o total de letras 
+        document.write(`Seu nome em MAIÚSCULO é: ${nome.toUpperCase()}. <br>`) // nome em maiúsc.
+        document.write(`Seu nome em MINÚSCULO é: ${nome.toLowerCase()}. <br>`) // nome em minúsc.
+        document.write(`${nome.fontcolor('red')}`) //nome com a cor vermelha
+        document.write(`${nome.fontsize('50px')}`) //nome com o tamanho de 50px
+    </script>
+</body>
+</html>

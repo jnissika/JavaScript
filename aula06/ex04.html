@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Strings</title>
+</head>
+<body>
+    <script>
+        // PERGUNTA O NOME E ATRIBUI O VALOR NA VARIÁVEL 'NOME'
+        var idade = Number(prompt('Qual é a sua idade?'))
+        var city = String(prompt('Onde você mora?'))
+        var nome = String(prompt('Seu nome é?'))
+        var n1 = Number(prompt('Informe um número: '))
+        var n2 = Number(prompt('Informe outro número: '))
+        var s = n1 * n2
+        document.write(`A resultado entre ${n1} e ${n2} é: ${s} <br>`)
+        // ESCREVE O CONTEÚDO NO NAVEGADOR
+        document.write(`Olá ${nome.toUpperCase()}, seu nome tem ${nome.length} letras. <br>`)
+        // ESCREVE O CONTEÚDO NO NAVEGADOR
+        document.write(`Seu nome em Maiúscolo é: ${nome.toUpperCase()}. <br>`)
+        // ESCREVE O CONTEÚDO NO NAVEGADOR
+        document.write(`Seu nome em Minúsulo é: ${nome.toLowerCase()}. <br>`)
+        // ESCREVE O CONTEÚDO NO NAVEGADOR
+        document.write(`E você tem ${idade} anos de idade. <br>`)
+        // VAI INFORMAR A IDADE QUE A PESSOA INFORMOU
+        document.write(`Você mora em uma cidade chamada de: ${city.toUpperCase()}. <br>`)
+        // VAI INFORMAR A CIDADE QUE O USUÁRIO INFORMOU
+        document.write(`Seu nome ${nome.toUpperCase()} <br>`)
+        //VAI INFORMAR O NOME DO USUÁRIO
+        document.write(`Voce é doido ${nome.replace('a', 'o')} <br>`)
+        var a = 5
+        var b = 6
+        if (a == b || a <= b) {
+            document.write('Olá Marilene') 
+        }
+        else {
+            document.write('Meu nome é Dogras')
+        }
+    </script>
+</body>
+</html>
